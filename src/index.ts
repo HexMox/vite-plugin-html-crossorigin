@@ -30,8 +30,7 @@ export default function build(options: VitePluginCrossOriginOpts) {
         const href = $el.attr('href') || $el.attr('src')
         const crossorigin = $el.attr('crossorigin')
         if (href && reg.test(href) && typeof crossorigin === 'undefined') {
-          const parsed = new URL(href)
-          if (includes.includes(parsed.hostname)) {
+          if (includes.some(x => href.includes(x))) {
             $el.attr('crossorigin', 'anonymous')
           }
         }
