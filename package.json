@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-html-crossorigin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin for adding crossorigin attribute to emitted html",
   "main": "lib/index.js",
   "module": "lib/index.js",
